@@ -1,5 +1,6 @@
 # 🚢 Intelligent Energy Management Architecture for Hybrid Diesel-Electric PSV Using AI and Sodium-Ion Batteries
 
+
 ## 📌 Overview
 
 This repository presents a research project focused on the development of an intelligent energy management architecture for the hybrid diesel-electric propulsion system of the PSV *World Diamond* operating in the Brazilian pre-salt region.
@@ -27,7 +28,59 @@ The proposed architecture integrates Artificial Intelligence techniques, includi
 * Sodium-Ion Battery Technology
 * Energy Optimization Algorithms
 * Maritime Decarbonization Strategies
-
+psv-hybrid-propulsion/
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── .gitignore
+├── .env.example
+│
+├── src/
+│   ├── __init__.py
+│   ├── main.py                     # Script principal
+│   ├── config.py                   # Configurações do sistema
+│   │
+│   ├── prediction/                 # Previsão de demanda
+│   │   ├── __init__.py
+│   │   ├── lstm_model.py           # Modelo LSTM para previsão
+│   │   ├── data_preprocessing.py  # Pré-processamento de dados
+│   │   └── trainer.py              # Treinamento do modelo
+│   │
+│   ├── control/                    # Controle MPC
+│   │   ├── __init__.py
+│   │   ├── mpc_controller.py       # Controlador MPC
+│   │   └── optimization.py          # Otimização do MPC
+│   │
+│   ├── simulation/                 # Simulador
+│   │   ├── __init__.py
+│   │   ├── simulator.py             # Simulador do sistema
+│   │   └── scenario_generator.py    # Gera cenários de simulação
+│   │
+│   ├── utils/                      # Utilitários
+│   │   ├── __init__.py
+│   │   ├── helpers.py
+│   │   └── visualization.py         # Funções de visualização
+│   │
+│   └── data/                       # Dados (opcional)
+│       └── sample_data.csv
+│
+├── models/                         # Modelos treinados
+│   └── lstm_model.h5
+│
+├── tests/                          # Testes
+│   ├── __init__.py
+│   ├── test_lstm.py
+│   └── test_mpc.py
+│
+├── docs/                           # Documentação
+│   ├── lstm_explanation.md
+│   ├── mpc_explanation.md
+│   └── setup_guide.md
+│
+└── results/                        # Resultados
+    ├── predictions/
+    └── simulations/
 ---
 
 ## 🚢 Case Study: PSV World Diamond
